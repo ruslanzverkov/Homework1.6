@@ -13,9 +13,14 @@ public class Main {
     }
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
-        String money= Arrays.toString(arr);
-        System.out.println(money);
-        System.out.println(Arrays.toString(moneySort));
+        String a = Arrays.toString(arr);
+        System.out.println(a);
+        int moneySend=0;
+        for (int i = 0; i < arr.length; i++) {
+            moneySend=moneySend+arr[i];
+        }
+        System.out.println(moneySend);
+
     }
 
 }
