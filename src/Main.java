@@ -19,24 +19,24 @@ public class Main {
         String a = Arrays.toString(arr);
         System.out.println(a);
 
-        int moneySend=0;
+        int moneySend=0;                             //1 вариант
         for (int i = 0; i < arr.length; i++) {
             moneySend+=arr[i];
         }
         System.out.println(moneySend);
 
-        int moneySend1=0;
+        int moneySend1=0;                            //2й вариант
         for (int i : arr) {
             moneySend1+=i;
         }
         System.out.println(moneySend1);
 
 //        Второе задание
-        Arrays.sort(arr);
+        Arrays.sort(arr);                                            // 1й вариант
         System.out.println("Максимальная сумма трат за день составила"+arr[arr.length-1]+" рублей");
         System.out.println("Минимальная сумма трат за день составила"+arr[0]+"рублей");
 
-        int moneyMax = 0;
+        int moneyMax = 0;                                          //2й вариант
         int moneyMin=arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i]>moneyMax) {
@@ -65,7 +65,6 @@ public class Main {
         for (int i = reverseFullName.length-1; i >=0; i--) {
             System.out.print(reverseFullName[i]);
         }
-
 
     }
 
