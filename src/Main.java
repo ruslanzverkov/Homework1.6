@@ -12,14 +12,24 @@ public class Main {
         return arr;
     }
     public static void main(String[] args) {
+
+//        Первое задание
+
         int[] arr = generateRandomArray();
         String a = Arrays.toString(arr);
         System.out.println(a);
+
         int moneySend=0;
         for (int i = 0; i < arr.length; i++) {
-            moneySend=moneySend+arr[i];
+            moneySend+=arr[i];
         }
         System.out.println(moneySend);
+
+        int moneySend1=0;
+        for (int i : arr) {
+            moneySend1+=i;
+        }
+        System.out.println(moneySend1);
 
     }
 
